@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ana Oliveira">
+        <title>TRABALHO DA ANA OLIVEIRA</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript">
+            function validar () {
+
+
+                var nome = formulario.nome.value;
+                var  email= formulario.email.value;
+                var  tel  = formulario.tel.value;
+             
+             
+            
+
+            if(nome==""){
+                alert('O Campo nome é obrigatório');
+                formulario.nome.focus();
+                
+                return false;
+                
+               
+            }
+            if(email==""){
+                alert('O Campo Email é obrigatório');
+                formulario.email.focus();
+                
+                return false;
+                
+               
+            }
+            if(tel==""){
+                alert('O Campo telefone é obrigatório');
+                formulario.tel.focus();
+                
+                return false;
+                
+               
+            }   
+          
+        }
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="4.png " alt="" height="30px" width="100px">
+          
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="Index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="Quem sou eu.html">QUEM SOU EU</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">CONTATO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+           
+            <section class="content">
+                <h1 id="formu">Formulário para contato</h1>
+               
+
+                
+
+                <form  name="formulario" id="formulario" action="" method="post" >
+                    <label>Nome</label>
+                    <input type="text" name="nome"> <br>
+                    <label>Email</label>
+                    <input type="email" name="email"> <br>
+                    <label>Telefone</label>
+                    <input type="tel" name="tel"> <br>
+                    
+            
+                    <label>Estado</label>
+                    <select>
+                        <option disabled selected>- Selecione -</option>
+                        <option>Rio de janeiro</option>
+                        <option>São paulo</option>
+                        <option>Paraná</option>
+                    </select> <br>
+            
+                    
+                    <label>Cidade</label>
+                    <select>
+                        <option disabled selected>- Selecione -</option>
+                        <option>Nova Iguaçu</option>
+                        <option>Queimados</option>
+                        <option>Batel</option>
+                        <option>Fazenda Rio grande</option>
+                        <option>Campinas</option>
+                        <option>Osasco</option>
+            
+            
+            
+            
+                    </select> <br>
+            
+                    <label for="idade">Idade</label>
+                    <input type="text" id="idade"> <br>
+                    <label>Sexo</label>
+                    <input type="radio" name="sexo" value="Femenino"/> Femenino
+                    <input type="radio" name="sexo" value="Masculino"/> Masculino <br>
+                    <label>Motivo do contato</label>
+                    <select name="motivo">
+                        <option disabled selected>- Selecione -</option>
+                        <option>Elogio</option>
+                        <option>Dúvidas</option>
+                        <option>Outros</option>
+                    </select> <br>
+            
+            
+            
+                    <label for="cometario">Deixe sua mensagem::</label> <br>
+            
+                    <textarea  name="cometario"
+                      rows="6" cols="33">
+                    
+                    </textarea>                    <br>
+                     <input type="submit" onclick=" return validar()">                                                                                            
+            
+
+                </form>
+
+            </section>
+        </main>
+
+
+        
+        <footer class="footer">
+            <p> Desenvolvido por Ana Maria Oliveira na disciplina de <a href="" >programação para o ambiente web. </a>  24/11/2021  </p>
+        </footer>
+    </body>

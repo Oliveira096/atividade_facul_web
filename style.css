@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header  {
+    width: 100%;
+   
+
+}
+
+.logo{
+    float: left;
+    margin-top: 22px;
+    margin-left: 15px;
+}
+.menu {
+    background-color: #6dc8bf;
+    text-align:end;
+    
+    
+    
+}
+.menu ul li {
+    display: inline-block;
+    
+    
+}
+.menu ul li a {
+    display: block;
+    color: #000000;
+    padding: 30px 10px;
+    
+    
+}
+.main {
+    padding: 50px 0;
+}
+.content {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: #eff0f1;
+    height: 1000px;
+}
+.content h1 {
+    margin-bottom: 30px;
+}
+.footer {
+    background-color: #eff0f1;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.foto{
+    float: right;
+    margin-right: 75px;
+    margin-top:  -80px;
+    
+}
+
+
+#formulario{
+
+    text-align: center;
+    padding-top: 5PX;
+    
+
+}
+input, select{
+    margin-bottom: 5px;
+}
+#formu{
+    text-align: center;
+    margin-top: 25px;
+}
